@@ -26,10 +26,14 @@
 * Clone the repository to your local device
 * Verify that you have node.js and npm installed
 * Navigate to the root directory of the project and run:
-  npm install
+```
+npm install
+```
 * Note: you might want to look into tensorflow for node.js installation as it can be optimized to use your GPU for a processing boost
 * To run the bot, run:
-  node index.js
+```
+node index.js
+```
 
 
 
