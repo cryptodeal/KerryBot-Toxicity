@@ -99,8 +99,8 @@ const parseCommentToxicity =  (content) => {
 }
 
 const getContent = () => {
-  console.log(`Liked comments: ${likedComments}`);
-  console.log(`Liked posts: ${likedPosts}\n`);
+  console.log(`Liked ${likedComments.length} comments: ${likedComments}`);
+  console.log(`Liked ${likedPosts.length} posts: ${likedPosts}\n`);
   return Promise.all([getComments(), getPosts()])
 };
 
