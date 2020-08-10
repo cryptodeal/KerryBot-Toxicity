@@ -1,0 +1,29 @@
+{
+  "name": "kerrybot-toxicity",
+  "version": "0.1.2",
+  "description": "John motherfucking Kerry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptodeal/KerryBot.git"
+  },
+  "author": "cryptodeal",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "@tensorflow/tfjs": "^2.1.0",
+    "@tensorflow/tfjs-backend-webgl": "^2.1.0",
+    "@tensorflow/tfjs-core": "^2.1.0",
+    "@tensorflow/tfjs-node": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "request": "^2.88.2",
+    "ws": "^7.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptodeal/KerryBot/issues"
+  },
+  "homepage": "https://github.com/cryptodeal/KerryBot#readme"
+}
