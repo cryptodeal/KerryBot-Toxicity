@@ -3,6 +3,8 @@ const toxicity = require('@tensorflow-models/toxicity');
 const WebSocket = require('ws');
 require('dotenv').config();
 const threshold = 0.75;
+let likedPosts = [];
+let likedComments = [];
 
 
 const config = [
@@ -97,6 +99,8 @@ const parseCommentToxicity =  (content) => {
 }
 
 const getContent = () => {
+  console.log(`Liked comments: ${likedComments}`);
+  console.log(`Liked posts: ${likedPosts}\n`);
   return Promise.all([getComments(), getPosts()])
 };
 
@@ -125,6 +129,7 @@ const getPosts = () => {
 }
 
 const likePost = (postId) => {
+  likedPosts.push(postId);
   //console.log('Liking Post\n');
   //let users = await getRandom(5)
   config.map(user => {
@@ -140,6 +145,7 @@ const likePost = (postId) => {
 };
 
 const likeComment = (commentId, postId) => {
+  likedComments.push(commentId);
   //console.log('Liking Comment\n');
   //let users = await getRandom(5)
   config.map(user => {
